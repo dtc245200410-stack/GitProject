@@ -1,0 +1,89 @@
+/* Thiết lập chung */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #263238;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1565c0;
+}
+
+h2 {
+    color: #2e5d86;
+    font-size: 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* 1. list-style-type: square */
+.square-list {
+    list-style-type: square;
+}
+
+/* 2. Số La Mã viết hoa */
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+/* 3. Sử dụng hình ảnh làm dấu đánh dấu */
+.image-list {
+    list-style-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Green_check.svg/16px-Green_check.svg.png");
+}
+
+/* 4. Dấu đánh dấu nằm bên ngoài */
+.outside-list {
+    list-style-position: outside;
+    max-width: 500px;
+}
+
+/* 5. Dấu đánh dấu nằm bên trong */
+.inside-list {
+    list-style-position: inside;
+    max-width: 500px;
+}
+
+/* 6. Thuộc tính rút gọn list-style */
+.shorthand-list {
+    list-style: square inside none;
+    background-color: #e3f2fd;
+    padding: 20px 35px;
+}
+
+/* 7. Màu sắc và khoảng cách */
+.language-list {
+    list-style-type: circle;
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    padding: 25px 45px;
+    border-radius: 8px;
+}
+
+.language-list li {
+    margin: 10px 0;
+}
+
+/* 8. Lộ trình học lập trình Web */
+.roadmap-list {
+    list-style: decimal-leading-zero inside;
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.roadmap-list li {
+    background-color: white;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 5px;
+}
