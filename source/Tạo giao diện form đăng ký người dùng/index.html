@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký người dùng</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f5f9;
+            margin: 0;
+            padding: 40px 15px;
+        }
+
+        .container {
+            max-width: 450px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #1769aa;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 11px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .gender-options label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 18px;
+        }
+
+        .gender-options input {
+            margin-right: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1769aa;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #10558c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Đăng ký người dùng</h2>
+
+        <form action="http://demo.codegym.vn/6/registration_form/register.php"
+              method="POST">
+
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       placeholder="Nhập họ và tên"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Nhập địa chỉ email"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label>
+                <input type="tel"
+                       id="phone"
+                       name="phone"
+                       placeholder="Nhập số điện thoại"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label>Giới tính:</label>
+
+                <div class="gender-options">
+                    <label>
+                        <input type="radio"
+                               name="gender"
+                               value="male"
+                               required>
+                        Nam
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="gender"
+                               value="female">
+                        Nữ
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+</body>
+</html>
